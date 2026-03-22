@@ -1,358 +1,280 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Happy Birthday My Anya</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-
-            background: url("background.png");
-            background-size: cover;
-            background-position: center;
-
-        }
-
-        /* NAVBAR */
-
-        nav {
-
-            background: rgba(0, 0, 0, 0.75);
-            padding: 12px;
-
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-
-        }
-
-        nav a {
-
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-
-        }
-
-        /* SECTION */
-
-        section {
-
-            padding: 40px 20px;
-            background: rgba(0, 0, 0, 0.5);
-
-        }
-
-        /* HEADINGS */
-
-        h1 {
-
-            font-size: 28px;
-            margin-bottom: 15px;
-
-        }
-
-        p {
-
-            font-size: 16px;
-            line-height: 26px;
-            max-width: 500px;
-            margin: auto;
-
-        }
-
-        /* CAKE */
-
-        .cake {
-
-            font-size: 60px;
-            margin: 10px 0;
-
-            animation: bounce 2s infinite;
-
-        }
-
-        @keyframes bounce {
-
-            0% {
-                transform: translateY(0)
-            }
-
-            50% {
-                transform: translateY(-10px)
-            }
-
-            100% {
-                transform: translateY(0)
-            }
-
-        }
-
-        /* GALLERY */
-
-        .gallery {
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-top: 20px;
-
-        }
-
-        .gallery img {
-
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 12px;
-
-        }
-
-        /* LETTER */
-
-        .letter {
-
-            font-size: 16px;
-            line-height: 28px;
-            max-width: 500px;
-            margin: auto;
-
-        }
-
-        /* SURPRISE BUTTON */
-
-        .surprise-btn {
-
-            margin-top: 20px;
-            padding: 15px 30px;
-
-            font-size: 18px;
-
-            border: none;
-            border-radius: 40px;
-
-            background: #ff2e63;
-            color: white;
-
-            cursor: pointer;
-
-            animation: pulse 2s infinite;
-
-        }
-
-        @keyframes pulse {
-
-            0% {
-                box-shadow: 0 0 10px red
-            }
-
-            50% {
-                box-shadow: 0 0 25px pink
-            }
-
-            100% {
-                box-shadow: 0 0 10px red
-            }
-
-        }
-
-        /* HEART */
-
-        .heart {
-
-            position: fixed;
-            bottom: -10px;
-
-            color: red;
-
-            animation: float 6s linear infinite;
-
-        }
-
-        @keyframes float {
-
-            0% {
-                transform: translateY(0)
-            }
-
-            100% {
-                transform: translateY(-100vh)
-            }
-
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Anya</title>
+<script>
+
+
+
+</script> 
+
+
+<style>
+
+   
+ 
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial;
+color:white;
+text-align:center;
+background:url("background.png");
+background-size:cover;
+background-position:center;
+}
+
+/* NAVBAR */
+nav{
+background:rgba(0,0,0,0.7);
+padding:10px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+/* SECTION */
+section{
+padding:40px 15px;
+background:rgba(0,0,0,0.5);
+}
+
+/* TEXT */
+h1{font-size:26px;margin-bottom:10px;}
+p{font-size:15px;line-height:24px;max-width:500px;margin:auto;}
+
+/* CAKE */
+.cake{
+font-size:60px;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:15px;
+}
+
+.gallery img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* LETTER */
+.letter{
+font-size:15px;
+line-height:25px;
+}
+
+/* BUTTON */
+.surprise-btn{
+margin-top:20px;
+padding:14px 25px;
+font-size:16px;
+border:none;
+border-radius:30px;
+background:#ff2e63;
+color:white;
+cursor:pointer;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 10px red}
+50%{box-shadow:0 0 25px pink}
+100%{box-shadow:0 0 10px red}
+}
+
+/* HEART FLOAT */
+.heart{
+position:fixed;
+bottom:-10px;
+color:red;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+100%{transform:translateY(-100vh)}
+}
+
+/* FINAL BIG HEART */
+#finalHeart{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) scale(0);
+font-size:90px;
+color:red;
+text-align:center;
+opacity:0;
+transition:1s;
+z-index:999;
+text-shadow:0 0 20px red,0 0 40px pink;
+}
+
+#finalHeart span{
+display:block;
+font-size:28px;
+color:white;
+margin-top:10px;
+}
+
+.showHeart{
+transform:translate(-50%,-50%) scale(1.6);
+opacity:1;
+}
+
+</style>
 
 </head>
 
 <body>
 
-    <nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#memories">Memories</a>
+<a href="#gallery">Photos</a>
+<a href="#letter">Letter</a>
+<a href="#surprise">Surprise</a>
+</nav>
 
-        <a href="#home">Home</a>
-        <a href="#memories">Memories</a>
-        <a href="#gallery">Photos</a>
-        <a href="#letter">Letter</a>
-        <a href="#surprise">Surprise</a>
-
-    </nav>
-
-
-    <section id="home">
-
-        <h1>🎂 Happy Birthday My Anya ❤️</h1>
-
-        <div class="cake">🎂</div>
-
-        <p>
-
-            The day you were born became the luckiest day of my life.
-            Because the world received a beautiful soul
-            and I received my happiness.
-
-            You are not just my girlfriend
-            you are my peace, my smile and my favorite person.
-
-        </p>
-
-    </section>
+<section id="home">
+<h1>🎂 Happy Birthday My Anya ❤️</h1>
+<div class="cake">🎂</div>
+<p>
+The day you were born became the luckiest day of my life.  
+You are my happiness, my peace and my favorite person.
+</p>
+</section>
+<h3> ❤️u are my girl💋</h3>
+ek baat bolu aaj ka din mere liye bahaut aacha hai U know why ?
+bcz n iss din meri moti aai meri jaan aai tum soch nhi sakte moti utna tere se pyar karta hu mai bhagwan teri har manukamna pura kare meri sari khusiya meri moti ko mile anyu really I am very very very happy you are my jaan U are only mine just duriya jayda nhi hai mai jaldi aaunga bauaa apna dhyan rkha kro apne liye nhi to mere liye❤️‍🩹💝💝
 
 
-    <section id="memories">
-
-        <h1>✨ Our Memories</h1>
-
-        <p>
-
-            Every message with you
-            Every call with you
-            Every laugh with you
-
-            Has become a memory that I will always keep in my heart.
-
-        </p>
-
-    </section>
 
 
-    <section id="gallery">
+<section id="memories">
+<h1>✨ Our Memories</h1>
+<p>
+Every chat, every moment with you  
+is my favorite memory forever ❤️what can I do ki tum hamesha khus rho love u re bahut jayda 
+</p>
+</section>
 
-        <h1>📸 Our Photo Library</h1>
+<section id="gallery">
+<h1>📸 Our Photo Library</h1>
+<div class="gallery">
+<img src="anya.jpg">
+<img src="anya2.jpg">
+<img src="chat.jpg">
+<img src="chat2.jpg">
+<img src="chat3.jpg">
+<img src="chat4.jpg">
+</div>
+</section>
 
-        <div class="gallery">
+<section id="letter">
+<h1>💌 A Letter For You</h1>
+<div class="letter">
+You are the most beautiful part of my life.  
+I promise I will always stand beside you.  
+You are my today, tomorrow and forever.  
+Happy Birthday My Anya 
+<h2>
 
-            <img src="anya.jpg">
-            <img src="anya2.jpg">
-            <img src="chat.jpg">
-            <img src="chat2.jpg">
-            <img src="chat4.jpg">
-            <img src="chat3.jpg">
-
-        </div>
-
-    </section>
-
-
-    <section id="letter">
-
-        <h1>💌 A Letter For You</h1>
-
-        <div class="letter">
-
-            On your birthday I just want to say something from my heart.
-
-            You are the most beautiful part of my life.
-
-            No matter what happens in life
-            I promise I will always stand beside you.
-
-            You are my today
-            You are my tomorrow
-            and you are my forever.
-
-            Happy Birthday My Anya ❤️
-
-        </div>
-
-    </section>
+</h2>
+</div>
+</section>
 
 
-    <section id="surprise">
+<section id="surprise">
+<h1>🎁 A Surprise For You</h1>
+<button class="surprise-btn" onclick="startSurprise()">
+🎁 Open Surprise
+</button>
+</section>
 
-        <h1>🎁 A Surprise For You</h1>
+<!-- BIG HEART -->
+<div id="finalHeart">
+❤️
+<span>Love You Anya</span>
+</div>
 
-        <button class="surprise-btn" onclick="playVoice()">
-
-            🎁 Open Surprise
-
-        </button>
-
-        <audio id="voice">
-
-<source src="New recording 6.m4a"
-
-type="audio/mpeg">
-
+<!-- BACKGROUND MUSIC -->
+<audio id="bg-music" loop>
+<source src="happybirthday.mp3" type="audio/mpeg">
 </audio>
-       
 
-    </section>
-
-
-    <script>
-
-        function createHeart() {
-
-            const heart = document.createElement("div");
-
-            heart.classList.add("heart");
-
-            heart.innerHTML = "❤️";
-
-            heart.style.left = Math.random() * 100 + "vw";
-
-            heart.style.fontSize = (Math.random() * 20 + 10) + "px";
-
-            document.body.appendChild(heart);
-
-            setTimeout(() => {
-
-                heart.remove();
-
-            }, 6000);
-
-        }
-
-        setInterval(createHeart, 600);
-
-
-        function playVoice() {
-
-            document.getElementById("voice").play();
-
-            for (let i = 0; i < 40; i++) {
-
-                setTimeout(createHeart, i * 120);
-
-            }
+<script>
+    
 
 
 
-    </script>
+
+// auto play after click (mobile fix)
+document.addEventListener("click", function(){
+document.getElementById("bg-music").play();
+},{once:true});
+
+// floating hearts
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="💋❤️"
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(Math.random()*20+10)+"px";
+document.body.appendChild(heart);
+
+setTimeout(()=>{heart.remove();},6000);
+}
+
+setInterval(createHeart,700);
+
+// FINAL SURPRISE
+function startSurprise(){
+
+// burst hearts
+for(let i=0;i<80;i++){
+setTimeout(createHeart,i*70);
+}
+
+// show big heart
+setTimeout(()=>{
+document.getElementById("finalHeart").classList.add("showHeart");
+},3000);
+
+}
+
+</script>
 
 </body>
+
+
 
 </html>
